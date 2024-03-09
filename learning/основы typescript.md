@@ -114,11 +114,24 @@ function pow (value: number, power?: number = 2): number {
 Вариант 2 - записать в "переменную"
 
 ```
-// описали тип для функции, которая 
+// описали тип для функции
 type Pow = (value: number, power?: number = 2): number
+
+// создаем функцию, и задаем ей тип Pow
 function pow: Pow (value, power = 2) {
   return Math.pow(value, power)
 }
+```
+
+Частные случаи
+
+```
+// функция ничего не принимает, ничего не возвращает
+function test (): void {}
+
+
+
+
 ```
 
 
