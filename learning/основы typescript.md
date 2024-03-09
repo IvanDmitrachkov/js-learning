@@ -102,6 +102,7 @@ type User = {
 ```
 
 ### 4. Типизация функций
+При типизации функции нужно описать все её параметры, и что она возвращает
 Вариант 1 - записывать типы сразу для переменных функции (самый популярный)
 ```
 function pow (value: number, power?: number = 2): number {
@@ -118,8 +119,6 @@ type Pow = (value: number, power?: number = 2): number
 function pow: Pow (value, power = 2) {
   return Math.pow(value, power)
 }
-
-
 ```
 
 
